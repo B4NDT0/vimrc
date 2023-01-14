@@ -17,7 +17,6 @@ Plug 'plasticboy/vim-markdown'
 Plug 'mgedmin/coverage-highlight.vim'
 Plug 'vim-scripts/mako.vim'
 Plug 'tell-k/vim-autopep8'
-Plug 'liuchengxu/space-vim-dark'
 Plug 'vim-scripts/vim-auto-save'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
@@ -262,22 +261,6 @@ augroup python_test
     autocmd!
     autocmd Filetype python nnoremap <Leader>t :write<cr> :call PyTestCurrentScope()<CR>
 augroup end
-
-" Themes
-
-"set termguicolors
-colorscheme space-vim-dark
-let g:space_vim_dark_background = 233
-set background=dark
-color space-vim-dark
-"highlight Comment cterm=italic
-"let g:solarized_termcolors=256
-"let g:spacevim_enable_guicolors=0
-"color dracula
-
-" ColorColumn Color
-hi ColorColumn guibg=#262626 ctermbg=235
-hi Search cterm=NONE ctermfg=white ctermbg=darkblue
 
 " Cursorline
 set cursorline
