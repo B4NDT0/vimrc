@@ -7,6 +7,7 @@ filetype off                  " required
 call plug#begin('~/.vim/plugged')
 " Specify a directory for plugins call plug#begin('~/.vim/plugged')
 
+Plug 'vim-autoformat/vim-autoformat'
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/indentpython.vim'
